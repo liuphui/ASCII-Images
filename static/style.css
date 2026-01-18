@@ -1,7 +1,9 @@
+/* Crazy Test */
+
 body {
   margin: 0;
-  background: #111;
-  color: #ddd;
+  background: skyblue;
+  color: white;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 }
 
@@ -31,7 +33,7 @@ button {
 }
 
 pre.ascii {
-  background: #0b0b0b;
+  background: white;
   padding: 16px;
   border-radius: 12px;
 
