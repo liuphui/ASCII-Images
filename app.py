@@ -19,7 +19,7 @@ app.mount(
 )
 templates = Jinja2Templates(directory="templates")
 
-RAMP = "@%#*+=-:. "
+RAMP = "@%#*+=-:."
 
 def to_ascii(img: Image.Image, width: int=120, aspect: float=0.55) -> str:
     img = img.convert("L")      # grayscale conversion
@@ -49,7 +49,6 @@ async def convert(
     file: UploadFile = File(...),
     width: int = 120,
 ):
-    # Basic content-type check (not bulletproof but helpful)
     if not file.content_type or not file.content_type.startswith("image/"):
         return JSONResponse({"error": "Please upload an image file."}, status_code=400)
 

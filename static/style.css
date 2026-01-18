@@ -36,6 +36,7 @@ button {
 
 pre.ascii {
   background: black;
+  background-size: auto;
   padding: 16px;
   border-radius: 12px;
 
