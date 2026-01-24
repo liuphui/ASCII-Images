@@ -7,11 +7,22 @@
   <link rel="stylesheet" href="/static/style.css?v=1" />
 </head>
 <body>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    
     <div class="wrap">
-        <h1>Image to ASCII</h1>
-
+        <h1>Image to ASCII Art Converter</h1>
+        <div>
+            <h3>
+                Upload an image and watch it transform into ASCII art based on your choice
+            </h3>
+        </div>
         <div class="controls">
             <input id="file" type="file" accept="image/*">
+            <label for="file">
+                Upload File
+            </label>
             <label>
                 Width:
                 <input id="width" type="number" min="20" max="200" value="150">
