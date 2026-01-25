@@ -113,22 +113,86 @@ pre.ascii {
   overflow-x: auto;
 }
 
-input[type="file"] {
+.uploader-card{
+  width: 600px;
+  padding: 18px 18px 22px;
+  border-radius: 14px;
+  background: #f5f8ff;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.uploader-title{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 22px;
+  color:#0f172a;
+  margin-bottom: 14px;
+}
+
+.title-icon{
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+.file-input{
   display: none;
 }
 
-label[for="file"] {
-  height: 60px;
-  width: 150px;
-  border: 1px dashed #999;
-  border-radius: 6px;
-  background: #333;
-  color: white;
+.dropzone{
+  flex: 1;
+  width: 100%;
+  border: 2px dashed #3b82f6;
+  border-radius: 12px;
+  background: rgba(59,130,246,0.06);
 
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 14px;
+
   cursor: pointer;
+  user-select: none;
+  text-align: center;
+  padding: 18px;
+}
+
+.drop-icon svg{
+  width: 50px;
+  height: 50px;
+  fill: #2563eb;
+}
+
+.drop-text .primary{
+  font-size: 18px;
+  color:#334155;
+}
+
+.drop-text .secondary{
+  margin-top: 8px;
+  font-size: 14px;
+  color:#64748b;
+}
+
+.dropzone:hover{
+  background: rgba(59,130,246,0.10);
+}
+
+.dropzone.is-dragover{
+  background: rgba(59,130,246,0.14);
+  border-color: #1d4ed8;
+}
+
+.upload-img {
+  width: 50px;
+  height: 50px;
 }
 
 .slidecontainer {
