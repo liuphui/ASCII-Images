@@ -113,7 +113,7 @@ pre.ascii {
   overflow-x: auto;
 }
 
-.uploader-card{
+.section-card{
   width: 600px;
   padding: 18px 18px 22px;
   border-radius: 14px;
@@ -125,7 +125,7 @@ pre.ascii {
   gap: 16px;
 }
 
-.uploader-title{
+.section-title{
   display: flex;
   align-items: center;
   gap: 10px;
@@ -162,6 +162,8 @@ pre.ascii {
   user-select: none;
   text-align: center;
   padding: 18px;
+
+  box-sizing: border-box;
 }
 
 .drop-icon svg{
