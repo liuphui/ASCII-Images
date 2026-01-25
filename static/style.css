@@ -4,8 +4,9 @@ html {
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-family: monospace;
   overflow: hidden;
+  color: white;
 }
 
 .bg {
@@ -43,12 +44,23 @@ body {
 }
 
 h1 {
-  font-family: monospace;
   text-align: center;
+  font-size: 40px;
+
+  background: linear-gradient(
+    90deg,
+    #fff6b0,   /* soft yellow */
+    #ffd400    /* strong yellow */
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
-h3 {
+h2 {
   text-align: center;
+  font-weight: 600;
 }
 
 @keyframes slide {
