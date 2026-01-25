@@ -22,9 +22,9 @@
         </div>
 
         <div class="controls">
-            <div class="uploader-card">
-                <div class="uploader-title">
-                    <img src="/static/assets/image-icon.svg" alt="" class="upload-img" />
+            <div class="section-card">
+                <div class="section-title">
+                    <img src="/static/assets/image-icon.svg" alt="" class="uploader-icon-size" />
                     <span>Upload Image</span>
                 </div>
 
@@ -45,13 +45,19 @@
                     </div>
                 </label>
             </div>
-            <div class="slidecontainer">
-                <label>
-                    Width:
-                    <div>
+            <div class="section-card">
+                <div class="section-title">
+                    <img src="/static/assets/settings-icon.svg" alt="" class="settings-icon-size">
+                    <span>Settings</span>
+                </div>
+                <div class="slidecontainer">
+                    <label>
+                        <div class="settings-text">
+                            Width
+                        </div>
                         <input class="slide" id="width" type="range" min="20" max="200" value="150">
-                    </div>
-                </label>
+                    </label>
+                </div>
             </div>
             <button id="go">Convert</button>
         </div>

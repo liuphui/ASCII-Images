@@ -192,10 +192,20 @@ pre.ascii {
   border-color: #1d4ed8;
 }
 
-.upload-img {
+.uploader-icon-size {
   width: 50px;
   height: 50px;
 }
+
+.settings-icon-size {
+  width: 35px;
+  height: 35px;
+}
+
+.settings-text {
+  color: black;
+}
+
 
 .slidecontainer {
   width: 100%;
