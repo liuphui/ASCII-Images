@@ -6,7 +6,7 @@ body {
   margin: 0;
   font-family: monospace;
   overflow: hidden;
-  color: white;
+  color: black;
 }
 
 .bg {
@@ -61,6 +61,7 @@ h1 {
 h2 {
   text-align: center;
   font-weight: 600;
+  color: white;
 }
 
 @keyframes slide {
@@ -80,9 +81,9 @@ h2 {
 
 .controls {
   display: flex;
+  flex-direction: column;
   gap: 12px;
-  align-items: center;
-  flex-wrap: wrap;
+  align-items: stretch;
   margin-bottom: 12px;
   font-size: medium;
 }
@@ -114,7 +115,6 @@ pre.ascii {
 }
 
 .section-card{
-  width: 600px;
   padding: 18px 18px 22px;
   border-radius: 14px;
   background: #f5f8ff;
@@ -198,6 +198,7 @@ pre.ascii {
 }
 
 .settings-text {
+  font-size: large;
   color: black;
 }
 
