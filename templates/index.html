@@ -21,50 +21,49 @@
             </h2>
         </div>
 
-        <div class="controls">
-            <div class="section-card">
-                <div class="section-title">
-                    <img src="/static/assets/uploader-icon.svg" alt="" class="icon-size" />
-                    <span>Upload Image</span>
-                </div>
-
-                <input class="file-input" id="file" type="file" accept="image/*">
-
-                <label for="file" id="dropzone" class="dropzone">
-                    <div class="drop-icon" aria-hidden="true">
-                        <!-- inline SVG so it matches the style and can be colored -->
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12 3l4 4h-3v7h-2V7H8l4-4z"></path>
-                            <path d="M5 14v5h14v-5h2v7H3v-7h2z"></path>
-                        </svg>
+        <div class="panel">
+            <div class="controls">
+                <div class="section-card">
+                    <div class="section-title">
+                        <img src="/static/assets/uploader-icon.svg" alt="" class="icon-size" />
+                        <span>Upload Image</span>
                     </div>
-
-                    <div class="drop-text">
-                        <div class="primary">Click to upload or drag and drop</div>
-                        <div class="secondary">PNG, JPG, GIF up to 10MB</div>
-                    </div>
-                </label>
-            </div>
-            <div class="section-card">
-                <div class="section-title">
-                    <img src="/static/assets/settings-icon.svg" alt="" class="icon-size">
-                    <span>Settings</span>
-                </div>
-                <div class="slidecontainer">
-                    <label>
-                        <div class="settings-text">
-                            Width
+                    <input class="file-input" id="file" type="file" accept="image/*">
+                    <label for="file" id="dropzone" class="dropzone">
+                        <div class="drop-icon" aria-hidden="true">
+                            <!-- inline SVG so it matches the style and can be colored -->
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 3l4 4h-3v7h-2V7H8l4-4z"></path>
+                                <path d="M5 14v5h14v-5h2v7H3v-7h2z"></path>
+                            </svg>
                         </div>
-                        <input class="slide" id="width" type="range" min="20" max="200" value="150">
+                        <div class="drop-text">
+                            <div class="primary">Click to upload or drag and drop</div>
+                            <div class="secondary">PNG, JPG, GIF up to 10MB</div>
+                        </div>
                     </label>
                 </div>
+                <div class="section-card">
+                    <div class="section-title">
+                        <img src="/static/assets/settings-icon.svg" alt="" class="icon-size">
+                        <span>Settings</span>
+                    </div>
+                    <div class="slidecontainer">
+                        <label>
+                                Width:
+                        </label>
+                        <span class="width-value">
+                            150
+                        </span>
+                        <input class="slide" id="width-range" type="range" min="20" max="200" value="150">
+                    </div>
+                </div>
+                <button id="go">Convert</button>
             </div>
-            <button id="go">Convert</button>
+            <pre id="out" class="ascii"></pre>
         </div>
 
         <div id="status" class="status"></div>
-
-        <pre id="out" class="ascii"></pre>
     </div>
 
     <script src="/static/app.js"></script>

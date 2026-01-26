@@ -79,6 +79,12 @@ h2 {
   padding: 16px;
 }
 
+.panel {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
 .controls {
   display: flex;
   flex-direction: column;
@@ -102,8 +108,8 @@ button {
 }
 
 pre.ascii {
+  width: 100%;
   background: black;
-  background-size: auto;
   padding: 16px;
   border-radius: 12px;
 
@@ -112,6 +118,11 @@ pre.ascii {
   line-height: 10px;
   white-space: pre;
   overflow-x: auto;
+}
+
+.controls,
+pre.ascii {
+  flex: 1;
 }
 
 .section-card{
