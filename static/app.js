@@ -1,5 +1,5 @@
 const fileEl = document.getElementById("file");
-const widthEl = document.getElementById("width");
+const widthEl = document.querySelector(".width-range");
 const goEl = document.getElementById("go");
 const outEl = document.getElementById("out");
 const statusEl = document.getElementById("status");
@@ -21,7 +21,7 @@ goEl.addEventListener("click", async () => {
     const fd = new FormData();
     fd.append("file", file);
 
-    const width = Number(widthEl.value || 120);
+    const width = Number(widthEl.value || 80);
 
     try {
         const res = await fetch(`/api/convert?width=${encodeURIComponent(width)}`, {
@@ -42,3 +42,15 @@ goEl.addEventListener("click", async () => {
         setStatus("Network error. Try again later.")
     }
 })
+
+document.querySelectorAll(".slidecontainer").forEach(container => {
+  const widthRange = container.querySelector(".width-range");
+  const widthValue = container.querySelector(".width-value");
+
+  function updateWidth() {
+    widthValue.textContent = widthRange.value;
+  }
+
+  widthRange.addEventListener("input", updateWidth);
+  updateWidth();
+});
