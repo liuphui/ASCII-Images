@@ -95,10 +95,14 @@ h2 {
 }
 
 button {
+  align-items: center;
   padding: 8px 12px;
   cursor: pointer;
-  background-color: red;
-  border-style: solid;
+  font-weight: 700;
+  font-size: 22px;
+  color:#0f172a;
+  background-color: #f5f8ff;
+  border-radius: 14px;
 }
 
 .status {
