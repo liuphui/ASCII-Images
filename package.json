@@ -1,0 +1,14 @@
+{
+  "name": "ascii-images",
+  "version": "1.0.0",
+  "description": "An updated program of a previous project which converts image pixels to ASCII character art. This program is updated with a functional UI written in HTML, CSS and JavaScript. Backend logic is handled by FastAPI and Python as the programming language.",
+  "main": "index.js",
+  "scripts": {
+    "lint:css": "stylelint \"**/*.{css,scss}\"",
+    "lint:css:fix": "stylelint \"**/*.{css,scss}\" --fix",
+    "format": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

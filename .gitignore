@@ -4,3 +4,8 @@ venv/
 
 # Cache
 __pycache__/
+
+# Prettier
+node_modules
+dist
+build
