@@ -8,24 +8,37 @@ An updated program of a previous project which converts image pixels to ASCII ch
 
 ## How to Use
 1. **Create a virtual environment**:
-`python -m venv venv`
+```bash
+python -m venv venv
+```
 
-2. **Activate the virtual environment**:
+2. **Activate the virtual environment**:`
+
 **Windows**
-`venv\Scripts\activate`
+```bash
+venv\Scripts\activate
+```
 
 **Mac/Linux**
-`source venv/bin/activate`
+```bash
+source venv/bin/activate
+```
 
 3. Install all the required dependencies:
-`pip install -r requirements.txt`
+```bash
+pip install -r requirements.txt
+```
 
 ### Running the Application
 To start the development server, run:
-`python -m uvicorn app:app --reload`
+```bash
+python -m uvicorn app:app --reload
+```
 
 The application will be available at `http://127.0.0.1:8000`
 
 ### Deactivating the Virtual Environment
 When you are done, deactivate the virtual environment:
-`deactivate`
+```bash
+deactivate
+```
