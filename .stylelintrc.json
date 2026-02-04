@@ -1,5 +1,5 @@
 {
-  "extends": ["stylelint-config-standard", "stylelint-config-prettier"],
+  "extends": ["stylelint-config-standard", "@stylelint/prettier-config"],
   "plugins": ["stylelint-order"],
   "rules": {
     "order/properties-order": [

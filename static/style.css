@@ -4,20 +4,17 @@ html {
 
 body {
   margin: 0;
+  color: black;
   font-family: monospace;
   overflow: hidden;
-  color: black;
 }
 
 .bg {
+  position: fixed;
+  inset: 0 -50%;
   animation: slide 3s ease-in-out infinite alternate;
   background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
-  bottom: 0;
-  left: -50%;
   opacity: 0.5;
-  position: fixed;
-  right: -50%;
-  top: 0;
   z-index: -1;
 }
 
@@ -31,48 +28,47 @@ body {
 }
 
 .content {
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 0.25em;
-  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
-  box-sizing: border-box;
+  position: fixed;
+  top: 50%;
   left: 50%;
   padding: 10vmin;
-  position: fixed;
+  border-radius: 0.25em;
+  background-color: rgb(255 255 255 / 80%);
+  box-shadow: 0 0 0.25em rgb(0 0 0 / 25%);
+  box-sizing: border-box;
   text-align: center;
-  top: 50%;
   transform: translate(-50%, -50%);
 }
 
 h1 {
-  text-align: center;
-  font-size: 40px;
-
   background: linear-gradient(90deg, #fff6b0, /* soft yellow */ #ffd400 /* strong yellow */);
-
-  -webkit-background-clip: text;
-  background-clip: text;
+  font-size: 40px;
   color: transparent;
+  text-align: center;
+  background-clip: text;
+  background-clip: text;
 }
 
 h2 {
+  color: white;
   text-align: center;
   font-weight: 600;
-  color: white;
 }
 
 @keyframes slide {
   0% {
     transform: translateX(-25%);
   }
+
   100% {
     transform: translateX(25%);
   }
 }
 
 .wrap {
-  max-width: 1100px;
-  margin: 0 auto;
   padding: 16px;
+  margin: 0 auto;
+  max-width: 1100px;
 }
 
 .panel {
@@ -84,38 +80,41 @@ h2 {
 .controls {
   display: flex;
   flex-direction: column;
-  gap: 12px;
   align-items: stretch;
-  margin-bottom: 12px;
   font-size: medium;
+  gap: 12px;
+  margin-bottom: 12px;
 }
 
 button {
   align-items: center;
-  background-color: #f5f8ff;
-  border-radius: 14px;
   padding: 8px 12px;
-
+  border-radius: 14px;
+  font-size: 18px;
+  color: white;
+  background-color: rgb(56 66 59);
+  border-color: rgb(14 4 4);
   cursor: pointer;
   font-weight: 700;
-  font-size: 22px;
-  color: #0f172a;
+}
+
+button:hover {
+  box-shadow: inset 5px 5px 10px -5px rgb(0 0 0 / 50%);
 }
 
 .status {
-  min-height: 1.2em;
   margin: 8px 0;
   color: white;
+  min-height: 1.2em;
 }
 
 pre.ascii {
-  background: white;
   padding: 16px;
+  background: white;
   border-radius: 12px;
-
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;
   font-size: 10px;
   line-height: 10px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;
   white-space: pre;
   overflow-x: auto;
 }
@@ -126,30 +125,29 @@ pre.ascii {
 }
 
 .section-card {
-  padding: 18px 18px 22px;
-  border-radius: 14px;
-  background: #f5f8ff;
-  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
-
   display: flex;
   flex-direction: column;
+  padding: 18px 18px 22px;
+  background: #f5f8ff;
+  border-radius: 14px;
+  box-shadow: 0 16px 40px rgb(15 23 42 / 12%);
   gap: 16px;
 }
 
 .section-title {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-weight: 700;
   font-size: 22px;
   color: #0f172a;
+  gap: 10px;
+  font-weight: 700;
   margin-bottom: 14px;
 }
 
 .title-icon {
+  display: block;
   width: 22px;
   height: 22px;
-  display: block;
 }
 
 .file-input {
@@ -157,23 +155,20 @@ pre.ascii {
 }
 
 .dropzone {
-  flex: 1;
-  width: 100%;
-  border: 2px dashed #3b82f6;
-  border-radius: 12px;
-  background: rgba(59, 130, 246, 0.06);
-
   display: flex;
+  flex: 1;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  padding: 18px;
+  background: rgb(59 130 246 / 6%);
+  border: 2px dashed #3b82f6;
+  border-radius: 12px;
   gap: 14px;
-
   cursor: pointer;
   user-select: none;
   text-align: center;
-  padding: 18px;
-
   box-sizing: border-box;
 }
 
@@ -189,17 +184,17 @@ pre.ascii {
 }
 
 .drop-text .secondary {
-  margin-top: 8px;
   font-size: 14px;
   color: #64748b;
+  margin-top: 8px;
 }
 
 .dropzone:hover {
-  background: rgba(59, 130, 246, 0.1);
+  background: rgb(59 130 246 / 10%);
 }
 
 .dropzone.is-dragover {
-  background: rgba(59, 130, 246, 0.14);
+  background: rgb(59 130 246 / 14%);
   border-color: #1d4ed8;
 }
 
@@ -218,28 +213,26 @@ pre.ascii {
 }
 
 .slide {
-  -webkit-appearance: none;
-  appearance: none;
-
   width: 75%;
   height: 10px;
-  border-radius: 5px;
   background: grey;
+  border-radius: 5px;
+  appearance: none;
+  appearance: none;
   outline: none;
   opacity: 0.7;
-  -webkit-transition: 0.2s;
+  transition: 0.2s;
   transition: opacity 0.2s;
 }
 
 .slide::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-
   width: 22px;
   height: 22px;
-  border-radius: 50%;
   background: white;
   border: 2px solid #09f;
+  border-radius: 50%;
+  appearance: none;
+  appearance: none;
   cursor: pointer;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 6px rgb(0 0 0 / 30%);
 }
